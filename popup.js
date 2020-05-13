@@ -2,6 +2,11 @@
 // if it's url is "boj/submit/"
 // then load something!
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+});
+
 
 /** when loaded */
 function load(parser){

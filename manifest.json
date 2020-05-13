@@ -7,7 +7,16 @@
         "<all_urls>",
         "storage"
     ],
-
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.acmicpc.net/submit/*"
+            ],
+            "css": ["modal.css"],
+            "js": ["content.js","materialize.js"], 
+            "run_at": "document_end"       
+        }
+    ], 
     "browser_action": {
         "default_popup": "popup.html"
     },
