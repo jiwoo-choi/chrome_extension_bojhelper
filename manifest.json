@@ -1,0 +1,17 @@
+{
+
+    "name": "fmkorea-filter",
+    "version": "0.6",
+    "permissions": [
+        "tabs",
+        "<all_urls>",
+        "storage"
+    ],
+
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version":2
+}
+
+
