@@ -3,6 +3,18 @@ body {font-family: Arial, Helvetica, sans-serif;}
 #myBtn {
     cursor: pointer;
 }
+
+#border {
+  height:5px;
+  background:black;
+  width:100%;
+}
+
+#border1 {
+  padding:10px;
+  background:#f5f5f5;
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */

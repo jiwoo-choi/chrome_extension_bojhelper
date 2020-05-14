@@ -7,18 +7,28 @@ document.querySelector('legend').innerHTML = document.querySelector('legend').in
   <div class="modal-content">
     <span class="close">&times;</span>
     <div id="title"></div>
-    <hr>
+    <div id="border"></div>
+    <div id="border1">
     <div id="result"></div>
+    </div>
+    <br>
     <div id="subtitle">입력</div>
-    <hr>
+    <div id="border"></div>
+    <div id="border1">
     <div id="input"></div>
+    </div>
     <br>
     <div id="subtitle">출력</div>
-    <hr>
+    <div id="border"></div>
+    <div id="border1">
     <div id="output"></div>
+    </div>
+    <br>
     <div id="subtitle">입력예시</div>
-    <hr>
+    <div id="border"></div>
+    <div id="border1">
     <div id="tt"></div>
+    </div>
   </div>
 </div>
 `
@@ -52,13 +62,13 @@ window.onclick = function(event) {
 
 async function load(parser){
     let urls = location.href.split('/');
-    await parser("https://www.boj.kr/"+urls[4]);
+    await parser("https://www.acmicpc.net/problem/"+urls[4]);
 }
 
 
 /** parse & view update */
 async function parser(url){
-    const response = await fetch("https://www.acmicpc.net/problem/11727");
+    const response = await fetch(url);
     const result = await response.text();
 
     var parser = new DOMParser();
@@ -79,10 +89,10 @@ async function parser(url){
     let tvalue = "";
     ts.forEach((value)=>{
         if (index % 2 == 0) {
-            tvalue += "입력예시" + (index+1).toString() + "\n";
+            tvalue += "입력예시" + (index+1).toString() + " \n";
             tvalue += value.innerText;
         } else {
-            tvalue += "출력예시" + (index).toString() + "\n"
+            tvalue += "\n 출력예시" + (index).toString() + " \n"
             tvalue += value.innerText;
         }
         index = index + 1;

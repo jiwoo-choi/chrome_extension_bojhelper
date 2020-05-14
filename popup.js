@@ -49,7 +49,7 @@ async function parser(url){
             tvalue += "입력예시" + (index+1).toString() + "\n";
             tvalue += value.innerText;
         } else {
-            tvalue += "출력예시" + (index).toString() + "\n"
+            tvalue += "\n 출력예시" + (index).toString() + "\n"
             tvalue += value.innerText;
         }
         index = index + 1;
