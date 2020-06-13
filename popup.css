@@ -1,0 +1,169 @@
+body {
+    font-size:14px;
+    width:600px;
+}
+
+.layer {
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.9);
+    width:600px;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:5;
+}
+
+.message-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    height:100%;
+}
+
+.message p{
+    color:white;
+    font-weight:bolder;
+    font-size:1.5rem;
+    margin-bottom:10px;
+}
+
+.message button {
+    height:40px;
+    padding:10px;
+    margin-right:20px;
+    border: unset;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    width:200%;
+    height:100%;
+}
+
+.main-menu-container {
+    width:600px;
+    padding:10px;
+    height:100%;
+}
+
+.sub-menu-container {
+    width:600px;
+    height:100%;
+    padding:20px;
+}
+
+.sub-menu-container .header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sub-menu-container .header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sub-menu-container svg {
+    height: 25px;
+    width: 25px;
+
+}
+
+.sub-menu-container .title {
+    display:flex;
+    align-items: center;
+    height: 25px;
+    font-size:1.1rem;
+    font-weight:bold;
+    padding-left:10px;
+}
+
+
+
+.sub-menu-container .header {
+    margin-bottom:20px;
+}
+
+.sub-menu-container h2 {
+    margin-bottom:15px;
+    margin-top:5px;
+}
+
+
+
+.card {
+    padding:15px;
+    border-radius:10px;
+    border: 1px solid #ccc!important;
+    margin-bottom:10px;
+}
+
+.chip {
+    display: inline-block;
+    padding: 10px;
+    background:#e0e1e2;
+    border-radius:10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor:default;
+    user-select: none;
+    line-height:10px;
+    color:rgba(0,0,0,.6);
+    font-weight:normal;
+}
+
+
+.active {
+    font-weight:bold;
+    color:white;
+    background:#16ab39;
+}
+
+.card *:not(button){
+    margin-bottom:10px;
+}
+
+.primary-button {
+    padding: 10px 20px;
+    border-radius:10px;
+    background-color:#2185d0;
+    color:white;
+    font-weight: bold;
+}
+
+.primary-button.success{
+    background-color:#0ea432;
+}
+
+.primary-button.success:hover {
+    background-color:#16ab39;
+}
+
+
+
+.primary-button:hover {
+    background-color: #0d71bb;
+    /* background-color: red; */
+}
+
+
+button.load-button span{
+    transition: all 1s;
+    opacity:1;
+}
+
+button.load-button svg{
+    display:none; 
+    margin:0 auto;
+    transition: all 1s;
+    fill: #fff;
+}
+
+button.load-button svg path,rect{
+    fill: #fff;
+}

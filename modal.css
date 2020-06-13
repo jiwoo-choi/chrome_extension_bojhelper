@@ -1,9 +1,5 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 
-#myBtn {
-    cursor: pointer;
-}
-
 #border {
   height:5px;
   background:black;

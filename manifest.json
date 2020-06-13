@@ -13,7 +13,7 @@
                 "https://www.acmicpc.net/submit/*"
             ],
             "css": ["modal.css"],
-            "js": ["content.js","materialize.js"], 
+            "js": ["content.js"], 
             "run_at": "document_end"       
         }
     ], 
@@ -21,6 +21,7 @@
         "default_popup": "popup.html"
     },
     "manifest_version":2
+
 }
 
 
