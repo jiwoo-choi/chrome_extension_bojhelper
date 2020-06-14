@@ -3,8 +3,8 @@
 
 ## 주요기능
 
-**auto-complete 기능**
-- 원하는 C++ 헤더와 메인 함수 등, 보일러플레이트 코드를 자동으로 작성해줍니다.
+**헤더 미리 작성 기능**
+- 원하는 C++ 헤더와 메인 함수 등, 보일러플레이트 코드를 제출 페이지에 접근시 자동으로 작성해줍니다.
 
 **백준 추천 문제**
 - 유명 블로거들이 추천한 유형별 백준 추천문제를 먼저 풀어보세요.
@@ -20,7 +20,7 @@
 
 ### 사용예시
 
-### auto-complete 
+### 헤더 미리 작성 기능.
 ![alt text](https://github.com/jiwoo-choi/chrome_extension_bojhelper/blob/master/example.png "example")
 
 ### 백준 추천 문제
